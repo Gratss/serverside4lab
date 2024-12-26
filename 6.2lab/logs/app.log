@@ -1,0 +1,18 @@
+{"level":"info","message":"Сервер запущен на http://localhost:3000","timestamp":"2024-12-26T22:53:29.004Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:53:33 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:53:33.356Z"}
+{"level":"info","message":"Время выполнения GET /: 3 мс","timestamp":"2024-12-26T22:53:33.356Z"}
+{"level":"info","message":"Сервер запущен на http://localhost:3000","timestamp":"2024-12-26T22:55:02.770Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:05 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:05.248Z"}
+{"level":"info","message":"Время выполнения GET /: 4 мс","timestamp":"2024-12-26T22:55:05.249Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:05 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:05.923Z"}
+{"level":"info","message":"Время выполнения GET /: 1 мс","timestamp":"2024-12-26T22:55:05.923Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:06 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:06.305Z"}
+{"level":"info","message":"Время выполнения GET /: 2 мс","timestamp":"2024-12-26T22:55:06.306Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:06 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:06.467Z"}
+{"level":"info","message":"Время выполнения GET /: 1 мс","timestamp":"2024-12-26T22:55:06.467Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:06 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:06.599Z"}
+{"level":"info","message":"Время выполнения GET /: 1 мс","timestamp":"2024-12-26T22:55:06.599Z"}
+{"level":"info","message":"Сервер запущен на http://localhost:3000","timestamp":"2024-12-26T22:55:12.417Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:13 +0000] \"GET / HTTP/1.1\" 200 69 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:13.873Z"}
+{"level":"info","message":"::1 - - [26/Dec/2024:22:55:13 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition Yx GX 03)\"","timestamp":"2024-12-26T22:55:13.950Z"}
+{"level":"info","message":"Время выполнения GET /favicon.ico: 3 мс","timestamp":"2024-12-26T22:55:13.951Z"}
