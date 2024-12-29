@@ -1,0 +1,124 @@
+public class Abiturient {
+    private int id;
+    private String lastName;
+    private String firstName;
+    private String middleName;
+    private String address;
+    private String phone;
+    private int[] grades;
+
+    // Конструкторы
+    public Abiturient() {
+    }
+
+    public Abiturient(int id, String lastName, String firstName, String middleName) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.middleName = middleName;
+    }
+
+    public Abiturient(int id, String lastName, String firstName, String middleName, 
+                     String address, String phone, int[] grades) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.address = address;
+        this.phone = phone;
+        this.grades = grades;
+    }
+
+    // Геттеры и сеттеры
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
+
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
+
+    public String getMiddleName() { return middleName; }
+    public void setMiddleName(String middleName) { this.middleName = middleName; }
+
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+
+    public int[] getGrades() { return grades; }
+    public void setGrades(int[] grades) { this.grades = grades; }
+
+    // Метод для подсчета суммы баллов
+    public int getTotalGrade() {
+        int sum = 0;
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return sum;
+    }
+
+    // Переопределение toString()
+    @Override
+    public String toString() {
+        return String.format("Абитуриент: %s %s %s, ID: %d, Телефон: %s, Сумма баллов: %d",
+                lastName, firstName, middleName, id, phone, getTotalGrade());
+    }
+
+    // Методы для работы с массивом абитуриентов
+    public static void printBadGrades(Abiturient[] abiturients) {
+        System.out.println("\nСписок абитуриентов с неудовлетворительными оценками:");
+        for (Abiturient a : abiturients) {
+            for (int grade : a.getGrades()) {
+                if (grade < 3) {
+                    System.out.println(a);
+                    break;
+                }
+            }
+        }
+    }
+
+    public static void printAboveSum(Abiturient[] abiturients, int targetSum) {
+        System.out.println("\nСписок абитуриентов с суммой баллов выше " + targetSum + ":");
+        for (Abiturient a : abiturients) {
+            if (a.getTotalGrade() > targetSum) {
+                System.out.println(a);
+            }
+        }
+    }
+
+    public static void printTopN(Abiturient[] abiturients, int n) {
+        System.out.println("\nТоп " + n + " абитуриентов по сумме баллов:");
+        // Сортировка по убыванию суммы баллов
+        Arrays.sort(abiturients, (a1, a2) -> Integer.compare(a2.getTotalGrade(), a1.getTotalGrade()));
+        
+        for (int i = 0; i < Math.min(n, abiturients.length); i++) {
+            System.out.println(abiturients[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        // Создаем массив абитуриентов
+        Abiturient[] abiturients = {
+            new Abiturient(1, "Иванов", "Иван", "Иванович", "ул. Ленина 1", 
+                          "+7-900-123-45-67", new int[]{5, 4, 5, 4, 5}),
+            new Abiturient(2, "Петров", "Петр", "Петрович", "ул. Пушкина 2", 
+                          "+7-900-234-56-78", new int[]{2, 3, 3, 4, 3}),
+            new Abiturient(3, "Сидоров", "Сидор", "Сидорович", "ул. Гоголя 3", 
+                          "+7-900-345-67-89", new int[]{5, 5, 5, 5, 5}),
+            new Abiturient(4, "Смирнов", "Алексей", "Алексеевич", "ул. Чехова 4", 
+                          "+7-900-456-78-90", new int[]{4, 4, 4, 4, 4})
+        };
+
+        // a) Список абитуриентов с неудовлетворительными оценками
+        printBadGrades(abiturients);
+
+        // b) Список абитуриентов с суммой баллов выше заданной
+        printAboveSum(abiturients, 20);
+
+        // c) Выбрать n абитуриентов с самой высокой суммой баллов
+        printTopN(abiturients, 2);
+    }
+}
